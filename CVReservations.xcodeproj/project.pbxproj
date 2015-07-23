@@ -26,6 +26,7 @@
 		945099B01B615EBE00DC2212 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945099AF1B615EBE00DC2212 /* SystemConfiguration.framework */; };
 		945099B21B615EC900DC2212 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 945099B11B615EC900DC2212 /* libz.dylib */; };
 		945099B41B615ED200DC2212 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 945099B31B615ED200DC2212 /* libsqlite3.dylib */; };
+		945099B71B61665300DC2212 /* UIKeyChainStore in Resources */ = {isa = PBXBuildFile; fileRef = 945099B61B61665300DC2212 /* UIKeyChainStore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		945099AF1B615EBE00DC2212 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		945099B11B615EC900DC2212 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		945099B31B615ED200DC2212 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		945099B61B61665300DC2212 /* UIKeyChainStore */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UIKeyChainStore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				941DA8561B613DA40049D02A /* Main.storyboard */,
 				941DA8591B613DA40049D02A /* Images.xcassets */,
 				941DA85B1B613DA40049D02A /* LaunchScreen.xib */,
+				945099B61B61665300DC2212 /* UIKeyChainStore */,
 				941DA84C1B613DA40049D02A /* Supporting Files */,
 			);
 			path = CVReservations;
@@ -257,6 +260,7 @@
 			files = (
 				941DA8581B613DA40049D02A /* Main.storyboard in Resources */,
 				941DA85D1B613DA40049D02A /* LaunchScreen.xib in Resources */,
+				945099B71B61665300DC2212 /* UIKeyChainStore in Resources */,
 				941DA85A1B613DA40049D02A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
