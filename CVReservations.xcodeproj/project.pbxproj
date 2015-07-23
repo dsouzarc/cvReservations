@@ -32,6 +32,10 @@
 		945099C61B616C3E00DC2212 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945099C41B616C3E00DC2212 /* SettingsViewController.m */; };
 		945099C71B616C3E00DC2212 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945099C51B616C3E00DC2212 /* SettingsViewController.xib */; };
 		945099CD1B61706200DC2212 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 945099CC1B61706200DC2212 /* UICKeyChainStore.m */; };
+		945099D21B6194FC00DC2212 /* TwoActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945099D01B6194FC00DC2212 /* TwoActivityViewController.m */; };
+		945099D31B6194FC00DC2212 /* TwoActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945099D11B6194FC00DC2212 /* TwoActivityViewController.xib */; };
+		945099DA1B61985100DC2212 /* TwoActivityOpenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945099D91B61985100DC2212 /* TwoActivityOpenView.xib */; };
+		945099DC1B619ECD00DC2212 /* TwoActivityReservedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945099DB1B619ECD00DC2212 /* TwoActivityReservedView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +83,11 @@
 		945099C51B616C3E00DC2212 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		945099CB1B61706200DC2212 /* UICKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICKeyChainStore.h; sourceTree = "<group>"; };
 		945099CC1B61706200DC2212 /* UICKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICKeyChainStore.m; sourceTree = "<group>"; };
+		945099CF1B6194FC00DC2212 /* TwoActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoActivityViewController.h; sourceTree = "<group>"; };
+		945099D01B6194FC00DC2212 /* TwoActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoActivityViewController.m; sourceTree = "<group>"; };
+		945099D11B6194FC00DC2212 /* TwoActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoActivityViewController.xib; sourceTree = "<group>"; };
+		945099D91B61985100DC2212 /* TwoActivityOpenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoActivityOpenView.xib; sourceTree = "<group>"; };
+		945099DB1B619ECD00DC2212 /* TwoActivityReservedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoActivityReservedView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,21 +142,15 @@
 		941DA84B1B613DA40049D02A /* CVReservations */ = {
 			isa = PBXGroup;
 			children = (
-				945099B81B61679400DC2212 /* MainViewController.h */,
-				945099B91B61679400DC2212 /* MainViewController.m */,
-				945099BA1B61679400DC2212 /* MainViewController.xib */,
-				941DA8501B613DA40049D02A /* AppDelegate.h */,
-				941DA8511B613DA40049D02A /* AppDelegate.m */,
-				945099C31B616C3E00DC2212 /* SettingsViewController.h */,
-				945099C41B616C3E00DC2212 /* SettingsViewController.m */,
-				945099C51B616C3E00DC2212 /* SettingsViewController.xib */,
-				941DA8531B613DA40049D02A /* ViewController.h */,
-				941DA8541B613DA40049D02A /* ViewController.m */,
-				941DA8561B613DA40049D02A /* Main.storyboard */,
-				945099CE1B6173FF00DC2212 /* KeychainStore */,
-				941DA8591B613DA40049D02A /* Images.xcassets */,
+				945099D81B61954800DC2212 /* TwoActivity ViewController */,
+				945099D71B61953B00DC2212 /* MainView Controller */,
+				945099D61B61952D00DC2212 /* App Delegate */,
+				945099D51B61952200DC2212 /* Settings View Controller */,
 				941DA85B1B613DA40049D02A /* LaunchScreen.xib */,
 				945099C11B616B0100DC2212 /* Settings Gear.png */,
+				945099D41B61950800DC2212 /* Default Items */,
+				945099CE1B6173FF00DC2212 /* KeychainStore */,
+				941DA8591B613DA40049D02A /* Images.xcassets */,
 				941DA84C1B613DA40049D02A /* Supporting Files */,
 			);
 			path = CVReservations;
@@ -205,6 +208,57 @@
 				945099CC1B61706200DC2212 /* UICKeyChainStore.m */,
 			);
 			name = KeychainStore;
+			sourceTree = "<group>";
+		};
+		945099D41B61950800DC2212 /* Default Items */ = {
+			isa = PBXGroup;
+			children = (
+				941DA8531B613DA40049D02A /* ViewController.h */,
+				941DA8541B613DA40049D02A /* ViewController.m */,
+				941DA8561B613DA40049D02A /* Main.storyboard */,
+			);
+			name = "Default Items";
+			sourceTree = "<group>";
+		};
+		945099D51B61952200DC2212 /* Settings View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				945099C31B616C3E00DC2212 /* SettingsViewController.h */,
+				945099C41B616C3E00DC2212 /* SettingsViewController.m */,
+				945099C51B616C3E00DC2212 /* SettingsViewController.xib */,
+			);
+			name = "Settings View Controller";
+			sourceTree = "<group>";
+		};
+		945099D61B61952D00DC2212 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				941DA8501B613DA40049D02A /* AppDelegate.h */,
+				941DA8511B613DA40049D02A /* AppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		945099D71B61953B00DC2212 /* MainView Controller */ = {
+			isa = PBXGroup;
+			children = (
+				945099B81B61679400DC2212 /* MainViewController.h */,
+				945099B91B61679400DC2212 /* MainViewController.m */,
+				945099BA1B61679400DC2212 /* MainViewController.xib */,
+			);
+			name = "MainView Controller";
+			sourceTree = "<group>";
+		};
+		945099D81B61954800DC2212 /* TwoActivity ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				945099CF1B6194FC00DC2212 /* TwoActivityViewController.h */,
+				945099D01B6194FC00DC2212 /* TwoActivityViewController.m */,
+				945099D11B6194FC00DC2212 /* TwoActivityViewController.xib */,
+				945099D91B61985100DC2212 /* TwoActivityOpenView.xib */,
+				945099DB1B619ECD00DC2212 /* TwoActivityReservedView.xib */,
+			);
+			name = "TwoActivity ViewController";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,7 +345,10 @@
 				941DA85D1B613DA40049D02A /* LaunchScreen.xib in Resources */,
 				945099BC1B61679400DC2212 /* MainViewController.xib in Resources */,
 				945099C21B616B0100DC2212 /* Settings Gear.png in Resources */,
+				945099DA1B61985100DC2212 /* TwoActivityOpenView.xib in Resources */,
+				945099D31B6194FC00DC2212 /* TwoActivityViewController.xib in Resources */,
 				945099C71B616C3E00DC2212 /* SettingsViewController.xib in Resources */,
+				945099DC1B619ECD00DC2212 /* TwoActivityReservedView.xib in Resources */,
 				941DA85A1B613DA40049D02A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +370,7 @@
 				941DA8551B613DA40049D02A /* ViewController.m in Sources */,
 				941DA8521B613DA40049D02A /* AppDelegate.m in Sources */,
 				945099C61B616C3E00DC2212 /* SettingsViewController.m in Sources */,
+				945099D21B6194FC00DC2212 /* TwoActivityViewController.m in Sources */,
 				941DA84F1B613DA40049D02A /* main.m in Sources */,
 				945099BB1B61679400DC2212 /* MainViewController.m in Sources */,
 				945099CD1B61706200DC2212 /* UICKeyChainStore.m in Sources */,

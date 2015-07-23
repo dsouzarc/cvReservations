@@ -1,5 +1,5 @@
 //
-//  MainViewController.h
+//  TwoActivityViewController.h
 //  CVReservations
 //
 //  Created by Ryan D'souza on 7/23/15.
@@ -7,9 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "SettingsViewController.h"
-#import "TwoActivityViewController.h"
 
-@interface MainViewController : ViewController
+@interface TwoActivityViewController : ViewController
 
 @end

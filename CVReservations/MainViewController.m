@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) SettingsViewController *settingsViewController;
 
+@property (strong, nonatomic) TwoActivityViewController *twoActivityViewController;
 
 @end
 
@@ -33,7 +34,9 @@
 }
 
 - (IBAction)secondFloorViewController:(id)sender {
-    
+    self.twoActivityViewController = [[TwoActivityViewController alloc] initWithNibName:@"TwoActivityViewController" bundle:[NSBundle mainBundle]];
+    self.modalPresentationStyle = UIModalPresentationFormSheet;
+    [self presentViewController:self.twoActivityViewController animated:YES completion:nil];
 }
 
 - (IBAction)thirdFloorViewController:(id)sender {
