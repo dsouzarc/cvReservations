@@ -24,24 +24,9 @@
     openActivity.frame = self.topActivityView.frame;
     [self.view addSubview:openActivity];
     
-    UIView *openActivity1 = (UIView*) [[NSBundle mainBundle] loadNibNamed:@"TwoActivityOpenView" owner:self options:nil][0];
-    openActivity1.frame = self.bottomActivityView.frame;
-    [self.view addSubview:openActivity1];
+    UIView *reservedActivity = (UIView*) [[NSBundle mainBundle] loadNibNamed:@"TwoActivityReservedView" owner:self options:nil][0];
+    reservedActivity.frame = self.bottomActivityView.frame;
+    [self.view addSubview:reservedActivity];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
