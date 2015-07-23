@@ -43,7 +43,6 @@
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     [currentInstallation addObject:self.iPadNameTextField.text forKey:@"channels"];
     [currentInstallation saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error){
-        NSLog(@"NAME: %@", self.iPadNameTextField.text);
         if(succeeded) {
             self.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
             [self dismissViewControllerAnimated:YES completion:nil];
