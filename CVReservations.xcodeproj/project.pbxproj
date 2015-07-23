@@ -43,6 +43,9 @@
 		945099EA1B61A0B100DC2212 /* pingpong1.png in Resources */ = {isa = PBXBuildFile; fileRef = 945099E31B61A0B100DC2212 /* pingpong1.png */; };
 		945099EB1B61A0B100DC2212 /* soccer.png in Resources */ = {isa = PBXBuildFile; fileRef = 945099E41B61A0B100DC2212 /* soccer.png */; };
 		945099EC1B61A0B100DC2212 /* pool.png in Resources */ = {isa = PBXBuildFile; fileRef = 945099E51B61A0B100DC2212 /* pool.png */; };
+		945099F11B61A40500DC2212 /* FourActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945099EF1B61A40500DC2212 /* FourActivityViewController.m */; };
+		945099F21B61A40500DC2212 /* FourActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945099F01B61A40500DC2212 /* FourActivityViewController.xib */; };
+		945099F51B61A43800DC2212 /* FourActivityOpenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945099F41B61A43800DC2212 /* FourActivityOpenView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +105,10 @@
 		945099E31B61A0B100DC2212 /* pingpong1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pingpong1.png; sourceTree = "<group>"; };
 		945099E41B61A0B100DC2212 /* soccer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soccer.png; sourceTree = "<group>"; };
 		945099E51B61A0B100DC2212 /* pool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pool.png; sourceTree = "<group>"; };
+		945099EE1B61A40500DC2212 /* FourActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourActivityViewController.h; sourceTree = "<group>"; };
+		945099EF1B61A40500DC2212 /* FourActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourActivityViewController.m; sourceTree = "<group>"; };
+		945099F01B61A40500DC2212 /* FourActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourActivityViewController.xib; sourceTree = "<group>"; };
+		945099F41B61A43800DC2212 /* FourActivityOpenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourActivityOpenView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +163,7 @@
 		941DA84B1B613DA40049D02A /* CVReservations */ = {
 			isa = PBXGroup;
 			children = (
+				945099F31B61A40B00DC2212 /* FourActivity ViewController */,
 				945099D81B61954800DC2212 /* TwoActivity ViewController */,
 				945099D71B61953B00DC2212 /* MainView Controller */,
 				945099D61B61952D00DC2212 /* App Delegate */,
@@ -290,6 +298,17 @@
 			name = Icons;
 			sourceTree = "<group>";
 		};
+		945099F31B61A40B00DC2212 /* FourActivity ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				945099EE1B61A40500DC2212 /* FourActivityViewController.h */,
+				945099EF1B61A40500DC2212 /* FourActivityViewController.m */,
+				945099F01B61A40500DC2212 /* FourActivityViewController.xib */,
+				945099F41B61A43800DC2212 /* FourActivityOpenView.xib */,
+			);
+			name = "FourActivity ViewController";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -375,6 +394,7 @@
 				941DA85D1B613DA40049D02A /* LaunchScreen.xib in Resources */,
 				945099BC1B61679400DC2212 /* MainViewController.xib in Resources */,
 				945099C21B616B0100DC2212 /* Settings Gear.png in Resources */,
+				945099F51B61A43800DC2212 /* FourActivityOpenView.xib in Resources */,
 				945099EC1B61A0B100DC2212 /* pool.png in Resources */,
 				945099E61B61A0B100DC2212 /* pinball.png in Resources */,
 				945099EB1B61A0B100DC2212 /* soccer.png in Resources */,
@@ -384,6 +404,7 @@
 				945099D31B6194FC00DC2212 /* TwoActivityViewController.xib in Resources */,
 				945099E91B61A0B100DC2212 /* pingpong2.png in Resources */,
 				945099C71B616C3E00DC2212 /* SettingsViewController.xib in Resources */,
+				945099F21B61A40500DC2212 /* FourActivityViewController.xib in Resources */,
 				945099DC1B619ECD00DC2212 /* TwoActivityReservedView.xib in Resources */,
 				941DA85A1B613DA40049D02A /* Images.xcassets in Resources */,
 			);
@@ -410,6 +431,7 @@
 				941DA84F1B613DA40049D02A /* main.m in Sources */,
 				945099BB1B61679400DC2212 /* MainViewController.m in Sources */,
 				945099CD1B61706200DC2212 /* UICKeyChainStore.m in Sources */,
+				945099F11B61A40500DC2212 /* FourActivityViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
