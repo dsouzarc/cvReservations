@@ -144,8 +144,7 @@
 				941DA8531B613DA40049D02A /* ViewController.h */,
 				941DA8541B613DA40049D02A /* ViewController.m */,
 				941DA8561B613DA40049D02A /* Main.storyboard */,
-				945099CB1B61706200DC2212 /* UICKeyChainStore.h */,
-				945099CC1B61706200DC2212 /* UICKeyChainStore.m */,
+				945099CE1B6173FF00DC2212 /* KeychainStore */,
 				941DA8591B613DA40049D02A /* Images.xcassets */,
 				941DA85B1B613DA40049D02A /* LaunchScreen.xib */,
 				945099C11B616B0100DC2212 /* Settings Gear.png */,
@@ -197,6 +196,15 @@
 				9450999E1B615E7900DC2212 /* Parse.framework */,
 			);
 			name = "3rd Party Libraries";
+			sourceTree = "<group>";
+		};
+		945099CE1B6173FF00DC2212 /* KeychainStore */ = {
+			isa = PBXGroup;
+			children = (
+				945099CB1B61706200DC2212 /* UICKeyChainStore.h */,
+				945099CC1B61706200DC2212 /* UICKeyChainStore.m */,
+			);
+			name = KeychainStore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

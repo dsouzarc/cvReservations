@@ -11,7 +11,7 @@
 @interface MainViewController ()
 
 @property (strong, nonatomic) SettingsViewController *settingsViewController;
-@property (strong, nonatomic) IBOutlet UITableView *reservationsTableView;
+
 
 @end
 
@@ -29,6 +29,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+}
+
+- (IBAction)secondFloorViewController:(id)sender {
+    
+}
+
+- (IBAction)thirdFloorViewController:(id)sender {
+    
+}
+
+- (IBAction)fourthFloorViewController:(id)sender {
     
 }
 
