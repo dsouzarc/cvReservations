@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import <Parse/Parse.h>
+#import "UICKeyChainStore.h"
 
 @interface SettingsViewController : ViewController
 

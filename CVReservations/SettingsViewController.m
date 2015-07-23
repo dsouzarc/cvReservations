@@ -10,28 +10,58 @@
 
 @interface SettingsViewController ()
 
+@property (strong, nonatomic) IBOutlet UITextField *iPadNameTextField;
+
+@property (strong, nonatomic) UICKeyChainStore *keyChain;
+
 @end
 
 @implementation SettingsViewController
 
+- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
+    if(self) {
+        self.keyChain = [[UICKeyChainStore alloc] init];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    if(self.keyChain[@"iPadName"]) {
+        [self.iPadNameTextField setText:self.keyChain[@"iPadName"]];
+    }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (IBAction)doneAction:(id)sender {
+    self.keyChain[@"iPadName"] = self.iPadNameTextField.text;
+    
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation addObject:self.iPadNameTextField.text forKey:@"channels"];
+    [currentInstallation saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error){
+        NSLog(@"NAME: %@", self.iPadNameTextField.text);
+        if(succeeded) {
+            self.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+        else {
+            [[[UIAlertView alloc] initWithTitle:@"Error saving iPad Name"
+                                        message:[NSString stringWithFormat:@"Error saving iPad Name: %@", error.description]
+                                       delegate:nil
+                              cancelButtonTitle:@"Try Again"
+                              otherButtonTitles:@"Cancel", nil]
+             show];
+        }
+    }];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)cancelIcon:(id)sender {
+    self.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
-*/
 
 @end

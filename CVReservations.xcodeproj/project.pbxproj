@@ -26,7 +26,12 @@
 		945099B01B615EBE00DC2212 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945099AF1B615EBE00DC2212 /* SystemConfiguration.framework */; };
 		945099B21B615EC900DC2212 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 945099B11B615EC900DC2212 /* libz.dylib */; };
 		945099B41B615ED200DC2212 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 945099B31B615ED200DC2212 /* libsqlite3.dylib */; };
-		945099B71B61665300DC2212 /* UIKeyChainStore in Resources */ = {isa = PBXBuildFile; fileRef = 945099B61B61665300DC2212 /* UIKeyChainStore */; };
+		945099BB1B61679400DC2212 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945099B91B61679400DC2212 /* MainViewController.m */; };
+		945099BC1B61679400DC2212 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945099BA1B61679400DC2212 /* MainViewController.xib */; };
+		945099C21B616B0100DC2212 /* Settings Gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 945099C11B616B0100DC2212 /* Settings Gear.png */; };
+		945099C61B616C3E00DC2212 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945099C41B616C3E00DC2212 /* SettingsViewController.m */; };
+		945099C71B616C3E00DC2212 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945099C51B616C3E00DC2212 /* SettingsViewController.xib */; };
+		945099CD1B61706200DC2212 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 945099CC1B61706200DC2212 /* UICKeyChainStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +70,15 @@
 		945099AF1B615EBE00DC2212 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		945099B11B615EC900DC2212 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		945099B31B615ED200DC2212 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		945099B61B61665300DC2212 /* UIKeyChainStore */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UIKeyChainStore; sourceTree = "<group>"; };
+		945099B81B61679400DC2212 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		945099B91B61679400DC2212 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		945099BA1B61679400DC2212 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		945099C11B616B0100DC2212 /* Settings Gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings Gear.png"; sourceTree = "<group>"; };
+		945099C31B616C3E00DC2212 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		945099C41B616C3E00DC2212 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		945099C51B616C3E00DC2212 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		945099CB1B61706200DC2212 /* UICKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICKeyChainStore.h; sourceTree = "<group>"; };
+		945099CC1B61706200DC2212 /* UICKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICKeyChainStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,14 +133,22 @@
 		941DA84B1B613DA40049D02A /* CVReservations */ = {
 			isa = PBXGroup;
 			children = (
+				945099B81B61679400DC2212 /* MainViewController.h */,
+				945099B91B61679400DC2212 /* MainViewController.m */,
+				945099BA1B61679400DC2212 /* MainViewController.xib */,
 				941DA8501B613DA40049D02A /* AppDelegate.h */,
 				941DA8511B613DA40049D02A /* AppDelegate.m */,
+				945099C31B616C3E00DC2212 /* SettingsViewController.h */,
+				945099C41B616C3E00DC2212 /* SettingsViewController.m */,
+				945099C51B616C3E00DC2212 /* SettingsViewController.xib */,
 				941DA8531B613DA40049D02A /* ViewController.h */,
 				941DA8541B613DA40049D02A /* ViewController.m */,
 				941DA8561B613DA40049D02A /* Main.storyboard */,
+				945099CB1B61706200DC2212 /* UICKeyChainStore.h */,
+				945099CC1B61706200DC2212 /* UICKeyChainStore.m */,
 				941DA8591B613DA40049D02A /* Images.xcassets */,
 				941DA85B1B613DA40049D02A /* LaunchScreen.xib */,
-				945099B61B61665300DC2212 /* UIKeyChainStore */,
+				945099C11B616B0100DC2212 /* Settings Gear.png */,
 				941DA84C1B613DA40049D02A /* Supporting Files */,
 			);
 			path = CVReservations;
@@ -260,7 +281,9 @@
 			files = (
 				941DA8581B613DA40049D02A /* Main.storyboard in Resources */,
 				941DA85D1B613DA40049D02A /* LaunchScreen.xib in Resources */,
-				945099B71B61665300DC2212 /* UIKeyChainStore in Resources */,
+				945099BC1B61679400DC2212 /* MainViewController.xib in Resources */,
+				945099C21B616B0100DC2212 /* Settings Gear.png in Resources */,
+				945099C71B616C3E00DC2212 /* SettingsViewController.xib in Resources */,
 				941DA85A1B613DA40049D02A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +304,10 @@
 			files = (
 				941DA8551B613DA40049D02A /* ViewController.m in Sources */,
 				941DA8521B613DA40049D02A /* AppDelegate.m in Sources */,
+				945099C61B616C3E00DC2212 /* SettingsViewController.m in Sources */,
 				941DA84F1B613DA40049D02A /* main.m in Sources */,
+				945099BB1B61679400DC2212 /* MainViewController.m in Sources */,
+				945099CD1B61706200DC2212 /* UICKeyChainStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
