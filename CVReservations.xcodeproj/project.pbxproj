@@ -99,19 +99,8 @@
 		941DA8401B613DA40049D02A = {
 			isa = PBXGroup;
 			children = (
-				945099B31B615ED200DC2212 /* libsqlite3.dylib */,
-				945099B11B615EC900DC2212 /* libz.dylib */,
-				945099AF1B615EBE00DC2212 /* SystemConfiguration.framework */,
-				945099AD1B615EB700DC2212 /* StoreKit.framework */,
-				945099AB1B615EB200DC2212 /* Security.framework */,
-				945099A91B615EAB00DC2212 /* QuartzCore.framework */,
-				945099A71B615EA400DC2212 /* CoreLocation.framework */,
-				945099A51B615E9E00DC2212 /* CoreGraphics.framework */,
-				945099A31B615E9800DC2212 /* CFNetwork.framework */,
-				945099A11B615E9100DC2212 /* AudioToolbox.framework */,
-				9450999D1B615E7900DC2212 /* Bolts.framework */,
-				9450999E1B615E7900DC2212 /* Parse.framework */,
 				941DA84B1B613DA40049D02A /* CVReservations */,
+				945099B51B6165AA00DC2212 /* 3rd Party Libraries */,
 				941DA8651B613DA40049D02A /* CVReservationsTests */,
 				941DA84A1B613DA40049D02A /* Products */,
 			);
@@ -165,6 +154,25 @@
 				941DA8671B613DA40049D02A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		945099B51B6165AA00DC2212 /* 3rd Party Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				945099B31B615ED200DC2212 /* libsqlite3.dylib */,
+				945099B11B615EC900DC2212 /* libz.dylib */,
+				945099AF1B615EBE00DC2212 /* SystemConfiguration.framework */,
+				945099AD1B615EB700DC2212 /* StoreKit.framework */,
+				945099AB1B615EB200DC2212 /* Security.framework */,
+				945099A91B615EAB00DC2212 /* QuartzCore.framework */,
+				945099A71B615EA400DC2212 /* CoreLocation.framework */,
+				945099A51B615E9E00DC2212 /* CoreGraphics.framework */,
+				945099A31B615E9800DC2212 /* CFNetwork.framework */,
+				945099A11B615E9100DC2212 /* AudioToolbox.framework */,
+				9450999D1B615E7900DC2212 /* Bolts.framework */,
+				9450999E1B615E7900DC2212 /* Parse.framework */,
+			);
+			name = "3rd Party Libraries";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.ryan.CVReservations";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -404,6 +413,7 @@
 				INFOPLIST_FILE = CVReservations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e367f2e3-e63c-4752-91da-77d0d221d69c";
 			};
 			name = Debug;
 		};
@@ -411,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.ryan.CVReservations";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -418,6 +429,7 @@
 				INFOPLIST_FILE = CVReservations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e367f2e3-e63c-4752-91da-77d0d221d69c";
 			};
 			name = Release;
 		};
