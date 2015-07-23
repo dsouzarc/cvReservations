@@ -36,6 +36,13 @@
 		945099D31B6194FC00DC2212 /* TwoActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945099D11B6194FC00DC2212 /* TwoActivityViewController.xib */; };
 		945099DA1B61985100DC2212 /* TwoActivityOpenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945099D91B61985100DC2212 /* TwoActivityOpenView.xib */; };
 		945099DC1B619ECD00DC2212 /* TwoActivityReservedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945099DB1B619ECD00DC2212 /* TwoActivityReservedView.xib */; };
+		945099E61B61A0B100DC2212 /* pinball.png in Resources */ = {isa = PBXBuildFile; fileRef = 945099DF1B61A0B100DC2212 /* pinball.png */; };
+		945099E71B61A0B100DC2212 /* arcade.png in Resources */ = {isa = PBXBuildFile; fileRef = 945099E01B61A0B100DC2212 /* arcade.png */; };
+		945099E81B61A0B100DC2212 /* racing.png in Resources */ = {isa = PBXBuildFile; fileRef = 945099E11B61A0B100DC2212 /* racing.png */; };
+		945099E91B61A0B100DC2212 /* pingpong2.png in Resources */ = {isa = PBXBuildFile; fileRef = 945099E21B61A0B100DC2212 /* pingpong2.png */; };
+		945099EA1B61A0B100DC2212 /* pingpong1.png in Resources */ = {isa = PBXBuildFile; fileRef = 945099E31B61A0B100DC2212 /* pingpong1.png */; };
+		945099EB1B61A0B100DC2212 /* soccer.png in Resources */ = {isa = PBXBuildFile; fileRef = 945099E41B61A0B100DC2212 /* soccer.png */; };
+		945099EC1B61A0B100DC2212 /* pool.png in Resources */ = {isa = PBXBuildFile; fileRef = 945099E51B61A0B100DC2212 /* pool.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +95,13 @@
 		945099D11B6194FC00DC2212 /* TwoActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoActivityViewController.xib; sourceTree = "<group>"; };
 		945099D91B61985100DC2212 /* TwoActivityOpenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoActivityOpenView.xib; sourceTree = "<group>"; };
 		945099DB1B619ECD00DC2212 /* TwoActivityReservedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoActivityReservedView.xib; sourceTree = "<group>"; };
+		945099DF1B61A0B100DC2212 /* pinball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinball.png; sourceTree = "<group>"; };
+		945099E01B61A0B100DC2212 /* arcade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arcade.png; sourceTree = "<group>"; };
+		945099E11B61A0B100DC2212 /* racing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = racing.png; sourceTree = "<group>"; };
+		945099E21B61A0B100DC2212 /* pingpong2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pingpong2.png; sourceTree = "<group>"; };
+		945099E31B61A0B100DC2212 /* pingpong1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pingpong1.png; sourceTree = "<group>"; };
+		945099E41B61A0B100DC2212 /* soccer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soccer.png; sourceTree = "<group>"; };
+		945099E51B61A0B100DC2212 /* pool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pool.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +161,7 @@
 				945099D61B61952D00DC2212 /* App Delegate */,
 				945099D51B61952200DC2212 /* Settings View Controller */,
 				941DA85B1B613DA40049D02A /* LaunchScreen.xib */,
-				945099C11B616B0100DC2212 /* Settings Gear.png */,
+				945099ED1B61A0CE00DC2212 /* Icons */,
 				945099D41B61950800DC2212 /* Default Items */,
 				945099CE1B6173FF00DC2212 /* KeychainStore */,
 				941DA8591B613DA40049D02A /* Images.xcassets */,
@@ -261,6 +275,21 @@
 			name = "TwoActivity ViewController";
 			sourceTree = "<group>";
 		};
+		945099ED1B61A0CE00DC2212 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				945099DF1B61A0B100DC2212 /* pinball.png */,
+				945099E01B61A0B100DC2212 /* arcade.png */,
+				945099E11B61A0B100DC2212 /* racing.png */,
+				945099E21B61A0B100DC2212 /* pingpong2.png */,
+				945099E31B61A0B100DC2212 /* pingpong1.png */,
+				945099E41B61A0B100DC2212 /* soccer.png */,
+				945099E51B61A0B100DC2212 /* pool.png */,
+				945099C11B616B0100DC2212 /* Settings Gear.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -342,11 +371,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				941DA8581B613DA40049D02A /* Main.storyboard in Resources */,
+				945099EA1B61A0B100DC2212 /* pingpong1.png in Resources */,
 				941DA85D1B613DA40049D02A /* LaunchScreen.xib in Resources */,
 				945099BC1B61679400DC2212 /* MainViewController.xib in Resources */,
 				945099C21B616B0100DC2212 /* Settings Gear.png in Resources */,
+				945099EC1B61A0B100DC2212 /* pool.png in Resources */,
+				945099E61B61A0B100DC2212 /* pinball.png in Resources */,
+				945099EB1B61A0B100DC2212 /* soccer.png in Resources */,
+				945099E81B61A0B100DC2212 /* racing.png in Resources */,
 				945099DA1B61985100DC2212 /* TwoActivityOpenView.xib in Resources */,
+				945099E71B61A0B100DC2212 /* arcade.png in Resources */,
 				945099D31B6194FC00DC2212 /* TwoActivityViewController.xib in Resources */,
+				945099E91B61A0B100DC2212 /* pingpong2.png in Resources */,
 				945099C71B616C3E00DC2212 /* SettingsViewController.xib in Resources */,
 				945099DC1B619ECD00DC2212 /* TwoActivityReservedView.xib in Resources */,
 				941DA85A1B613DA40049D02A /* Images.xcassets in Resources */,
