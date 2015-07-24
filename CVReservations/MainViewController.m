@@ -12,10 +12,11 @@
 
 @property (strong, nonatomic) SettingsViewController *settingsViewController;
 
-
 @property (strong, nonatomic) FourActivityViewController *secondFloorActivityViewController;
 @property (strong, nonatomic) TwoActivityViewController *thirdFloorActivityViewController;
 @property (strong, nonatomic) TwoActivityViewController *fourthFloorActivityViewController;
+
+@property (strong, nonatomic) NSMutableArray *currentReservations;
 
 @end
 
@@ -27,6 +28,30 @@
     
     if(self) {
         self.settingsViewController = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:[NSBundle mainBundle]];
+        self.currentReservations = [[NSMutableArray alloc] init];
+        
+        PFQuery *query = [PFQuery queryWithClassName:@"Reservations"];
+        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+            if(error) {
+                NSLog(@"Error getting reservations from Parse DB\t%@", error.description);
+            }
+            else {
+                NSLog(@"Got reservations from Parse db");
+                
+                for(PFObject *object in objects) {
+                    NSString *reservationID = [object objectId];
+                    NSString *description = object[@"description"];
+                    NSString *game = object[@"game"];
+                    NSInteger startTime = [object[@"startTime"] integerValue];
+                    NSString *status = object[@"status"];
+                    NSInteger players = [object[@"players"] integerValue];
+                    NSInteger needed = [object[@"needed"] integerValue];
+                    Reservation *reservation = [[Reservation alloc] initWithReservationID:reservationID gameIdentifier:game status:status reservationDescription:description startTime:startTime numberOfPlayers:players neededPlayers:needed];
+                    [self.currentReservations addObject:reservation];
+                    NSLog(@"Reservation: %@\t%@\t%@\t", reservationID, description, status);
+                }
+            }
+        }];
     }
     return self;
 }
@@ -59,6 +84,5 @@
     self.modalPresentationStyle = UIModalPresentationFormSheet;
     [self presentViewController:self.settingsViewController animated:YES completion:nil];
 }
-
 
 @end

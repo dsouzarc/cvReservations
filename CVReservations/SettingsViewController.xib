@@ -19,12 +19,12 @@
                     <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                     <items>
                         <navigationItem title="Settings" id="d3e-hH-QpF">
-                            <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Rfh-A5-ebp">
+                            <barButtonItem key="leftBarButtonItem" title="Cancel" id="Rfh-A5-ebp">
                                 <connections>
                                     <action selector="cancelIcon:" destination="-1" id="D5G-Tm-AS6"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem key="rightBarButtonItem" title="Item" systemItem="done" id="xeN-e9-4Zp">
+                            <barButtonItem key="rightBarButtonItem" title="Done" id="xeN-e9-4Zp">
                                 <connections>
                                     <action selector="doneAction:" destination="-1" id="7Vn-86-fcC"/>
                                 </connections>

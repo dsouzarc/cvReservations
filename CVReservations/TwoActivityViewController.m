@@ -13,12 +13,25 @@
 @property (strong, nonatomic) IBOutlet UIView *topActivityView;
 @property (strong, nonatomic) IBOutlet UIView *bottomActivityView;
 
+@property (strong, nonatomic) NSMutableArray *reservations;
+
 @end
 
 @implementation TwoActivityViewController
 
+- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil reservations:(NSMutableArray *)reservations
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
+    if(self) {
+        self.reservations = reservations;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     UIView *openActivity = (UIView*) [[NSBundle mainBundle] loadNibNamed:@"TwoActivityOpenView" owner:self options:nil][0];
     openActivity.frame = self.topActivityView.frame;
     [self.view addSubview:openActivity];

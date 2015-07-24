@@ -15,9 +15,21 @@
 @property (strong, nonatomic) IBOutlet UIView *thirdActivityView;
 @property (strong, nonatomic) IBOutlet UIView *fourthActivityView;
 
+@property (strong, nonatomic) NSMutableArray *reservations;
+
 @end
 
 @implementation FourActivityViewController
+
+- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil reservations:(NSMutableArray *)reservations
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
+    if(self) {
+        self.reservations = reservations;
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

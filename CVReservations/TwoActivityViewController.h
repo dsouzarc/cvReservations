@@ -10,4 +10,6 @@
 
 @interface TwoActivityViewController : ViewController
 
+- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil reservations:(NSMutableArray*)reservations;
+
 @end
