@@ -27,6 +27,10 @@
     UIImageView *imageView = (UIImageView*) [openActivity viewWithTag:100];
     [imageView setImage:[UIImage imageNamed:@"pinball"]];
     
+    UIButton *button = (UIButton*) [openActivity viewWithTag:300];
+    button.titleLabel.numberOfLines = 2;
+    button.titleLabel.adjustsFontSizeToFitWidth = YES;
+    
     [self.view addSubview:openActivity];
     
     openActivity = (UIView*) [[NSBundle mainBundle] loadNibNamed:@"FourActivityView" owner:self options:nil][0];
