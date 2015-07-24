@@ -28,6 +28,9 @@
     [application registerUserNotificationSettings:settings];
     [application registerForRemoteNotifications];
     
+    //Reset the badge count to 0 when we begin
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
+    
     MainViewController *mainViewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:[NSBundle mainBundle]];
     self.window.rootViewController = mainViewController;
 
