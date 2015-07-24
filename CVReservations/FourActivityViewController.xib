@@ -62,7 +62,7 @@
                     <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="6aU-ns-E2L" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6V1-sc-FnX"/>
                 <constraint firstItem="0zt-Q3-lF7" firstAttribute="top" secondItem="lcc-rJ-Nmo" secondAttribute="bottom" constant="8" id="CKZ-zV-93e"/>

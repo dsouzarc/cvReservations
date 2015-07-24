@@ -13,6 +13,7 @@
 @property (strong, nonatomic) SettingsViewController *settingsViewController;
 
 @property (strong, nonatomic) TwoActivityViewController *twoActivityViewController;
+@property (strong, nonatomic) FourActivityViewController *fourActivityViewController;
 
 @end
 
@@ -44,7 +45,9 @@
 }
 
 - (IBAction)fourthFloorViewController:(id)sender {
-    
+    self.fourActivityViewController = [[FourActivityViewController alloc] initWithNibName:@"FourActivityViewController" bundle:[NSBundle mainBundle]];
+    self.modalPresentationStyle = UIModalPresentationFormSheet;
+    [self presentViewController:self.fourActivityViewController animated:YES completion:nil];
 }
 
 

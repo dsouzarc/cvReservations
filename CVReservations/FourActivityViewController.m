@@ -21,7 +21,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    UIView *openActivity = (UIView*) [[NSBundle mainBundle] loadNibNamed:@"FourActivityView" owner:self options:nil][0];
+    openActivity.frame = self.firstActivityView.frame;
+    [self.view addSubview:openActivity];
+    
+    openActivity = (UIView*) [[NSBundle mainBundle] loadNibNamed:@"FourActivityView" owner:self options:nil][0];
+    openActivity.frame = self.secondActivityView.frame;
+    [self.view addSubview:openActivity];
+    
+    openActivity = (UIView*) [[NSBundle mainBundle] loadNibNamed:@"FourActivityView" owner:self options:nil][0];
+    openActivity.frame = self.thirdActivityView.frame;
+    [self.view addSubview:openActivity];
+    
+    openActivity = (UIView*) [[NSBundle mainBundle] loadNibNamed:@"FourActivityView" owner:self options:nil][0];
+    openActivity.frame = self.fourthActivityView.frame;
+    [self.view addSubview:openActivity];
 }
 
 @end

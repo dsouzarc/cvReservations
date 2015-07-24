@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "SettingsViewController.h"
 #import "TwoActivityViewController.h"
-
+#import "FourActivityViewController.h"
 @interface MainViewController : ViewController
 
 @end

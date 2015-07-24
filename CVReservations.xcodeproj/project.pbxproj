@@ -45,7 +45,7 @@
 		945099EC1B61A0B100DC2212 /* pool.png in Resources */ = {isa = PBXBuildFile; fileRef = 945099E51B61A0B100DC2212 /* pool.png */; };
 		945099F11B61A40500DC2212 /* FourActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945099EF1B61A40500DC2212 /* FourActivityViewController.m */; };
 		945099F21B61A40500DC2212 /* FourActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945099F01B61A40500DC2212 /* FourActivityViewController.xib */; };
-		945099F51B61A43800DC2212 /* FourActivityOpenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945099F41B61A43800DC2212 /* FourActivityOpenView.xib */; };
+		945099F71B62808800DC2212 /* FourActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945099F61B62808800DC2212 /* FourActivityView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,7 +108,7 @@
 		945099EE1B61A40500DC2212 /* FourActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourActivityViewController.h; sourceTree = "<group>"; };
 		945099EF1B61A40500DC2212 /* FourActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourActivityViewController.m; sourceTree = "<group>"; };
 		945099F01B61A40500DC2212 /* FourActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourActivityViewController.xib; sourceTree = "<group>"; };
-		945099F41B61A43800DC2212 /* FourActivityOpenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourActivityOpenView.xib; sourceTree = "<group>"; };
+		945099F61B62808800DC2212 /* FourActivityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourActivityView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,7 +304,7 @@
 				945099EE1B61A40500DC2212 /* FourActivityViewController.h */,
 				945099EF1B61A40500DC2212 /* FourActivityViewController.m */,
 				945099F01B61A40500DC2212 /* FourActivityViewController.xib */,
-				945099F41B61A43800DC2212 /* FourActivityOpenView.xib */,
+				945099F61B62808800DC2212 /* FourActivityView.xib */,
 			);
 			name = "FourActivity ViewController";
 			sourceTree = "<group>";
@@ -358,6 +358,7 @@
 				TargetAttributes = {
 					941DA8481B613DA40049D02A = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = Q7N3L673D8;
 					};
 					941DA8611B613DA40049D02A = {
 						CreatedOnToolsVersion = 6.4;
@@ -394,13 +395,13 @@
 				941DA85D1B613DA40049D02A /* LaunchScreen.xib in Resources */,
 				945099BC1B61679400DC2212 /* MainViewController.xib in Resources */,
 				945099C21B616B0100DC2212 /* Settings Gear.png in Resources */,
-				945099F51B61A43800DC2212 /* FourActivityOpenView.xib in Resources */,
 				945099EC1B61A0B100DC2212 /* pool.png in Resources */,
 				945099E61B61A0B100DC2212 /* pinball.png in Resources */,
 				945099EB1B61A0B100DC2212 /* soccer.png in Resources */,
 				945099E81B61A0B100DC2212 /* racing.png in Resources */,
 				945099DA1B61985100DC2212 /* TwoActivityOpenView.xib in Resources */,
 				945099E71B61A0B100DC2212 /* arcade.png in Resources */,
+				945099F71B62808800DC2212 /* FourActivityView.xib in Resources */,
 				945099D31B6194FC00DC2212 /* TwoActivityViewController.xib in Resources */,
 				945099E91B61A0B100DC2212 /* pingpong2.png in Resources */,
 				945099C71B616C3E00DC2212 /* SettingsViewController.xib in Resources */,
@@ -559,15 +560,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.ryan.CVReservations";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = CVReservations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e367f2e3-e63c-4752-91da-77d0d221d69c";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -575,15 +578,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.ryan.CVReservations";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = CVReservations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e367f2e3-e63c-4752-91da-77d0d221d69c";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
