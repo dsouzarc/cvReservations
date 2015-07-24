@@ -23,7 +23,7 @@
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLR-DN-fqM">
                     <rect key="frame" x="405" y="181" width="355" height="64"/>
                     <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                    <state key="normal" title="Close Game">
+                    <state key="normal" title="End Game">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>

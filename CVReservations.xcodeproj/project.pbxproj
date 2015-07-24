@@ -46,6 +46,7 @@
 		945099F11B61A40500DC2212 /* FourActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945099EF1B61A40500DC2212 /* FourActivityViewController.m */; };
 		945099F21B61A40500DC2212 /* FourActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945099F01B61A40500DC2212 /* FourActivityViewController.xib */; };
 		945099F71B62808800DC2212 /* FourActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945099F61B62808800DC2212 /* FourActivityView.xib */; };
+		945099FA1B62A32100DC2212 /* Reservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 945099F91B62A32100DC2212 /* Reservation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,8 @@
 		945099EF1B61A40500DC2212 /* FourActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourActivityViewController.m; sourceTree = "<group>"; };
 		945099F01B61A40500DC2212 /* FourActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourActivityViewController.xib; sourceTree = "<group>"; };
 		945099F61B62808800DC2212 /* FourActivityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourActivityView.xib; sourceTree = "<group>"; };
+		945099F81B62A32100DC2212 /* Reservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reservation.h; sourceTree = "<group>"; };
+		945099F91B62A32100DC2212 /* Reservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reservation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,8 @@
 		941DA84B1B613DA40049D02A /* CVReservations */ = {
 			isa = PBXGroup;
 			children = (
+				945099F81B62A32100DC2212 /* Reservation.h */,
+				945099F91B62A32100DC2212 /* Reservation.m */,
 				945099F31B61A40B00DC2212 /* FourActivity ViewController */,
 				945099D81B61954800DC2212 /* TwoActivity ViewController */,
 				945099D71B61953B00DC2212 /* MainView Controller */,
@@ -428,6 +433,7 @@
 				941DA8551B613DA40049D02A /* ViewController.m in Sources */,
 				941DA8521B613DA40049D02A /* AppDelegate.m in Sources */,
 				945099C61B616C3E00DC2212 /* SettingsViewController.m in Sources */,
+				945099FA1B62A32100DC2212 /* Reservation.m in Sources */,
 				945099D21B6194FC00DC2212 /* TwoActivityViewController.m in Sources */,
 				941DA84F1B613DA40049D02A /* main.m in Sources */,
 				945099BB1B61679400DC2212 /* MainViewController.m in Sources */,

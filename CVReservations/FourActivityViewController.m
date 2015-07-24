@@ -23,6 +23,10 @@
     [super viewDidLoad];
     UIView *openActivity = (UIView*) [[NSBundle mainBundle] loadNibNamed:@"FourActivityView" owner:self options:nil][0];
     openActivity.frame = self.firstActivityView.frame;
+    
+    UIImageView *imageView = (UIImageView*) [openActivity viewWithTag:100];
+    [imageView setImage:[UIImage imageNamed:@"pinball"]];
+    
     [self.view addSubview:openActivity];
     
     openActivity = (UIView*) [[NSBundle mainBundle] loadNibNamed:@"FourActivityView" owner:self options:nil][0];

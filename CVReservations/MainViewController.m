@@ -12,8 +12,10 @@
 
 @property (strong, nonatomic) SettingsViewController *settingsViewController;
 
-@property (strong, nonatomic) TwoActivityViewController *twoActivityViewController;
-@property (strong, nonatomic) FourActivityViewController *fourActivityViewController;
+
+@property (strong, nonatomic) FourActivityViewController *secondFloorActivityViewController;
+@property (strong, nonatomic) TwoActivityViewController *thirdFloorActivityViewController;
+@property (strong, nonatomic) TwoActivityViewController *fourthFloorActivityViewController;
 
 @end
 
@@ -35,19 +37,21 @@
 }
 
 - (IBAction)secondFloorViewController:(id)sender {
-    self.twoActivityViewController = [[TwoActivityViewController alloc] initWithNibName:@"TwoActivityViewController" bundle:[NSBundle mainBundle]];
+    self.secondFloorActivityViewController = [[FourActivityViewController alloc] initWithNibName:@"FourActivityViewController" bundle:[NSBundle mainBundle]];
     self.modalPresentationStyle = UIModalPresentationFormSheet;
-    [self presentViewController:self.twoActivityViewController animated:YES completion:nil];
+    [self presentViewController:self.secondFloorActivityViewController animated:YES completion:nil];
 }
 
 - (IBAction)thirdFloorViewController:(id)sender {
-    
+    self.thirdFloorActivityViewController = [[TwoActivityViewController alloc] initWithNibName:@"TwoActivityViewController" bundle:[NSBundle mainBundle]];
+    self.modalInPopover = UIModalPresentationFormSheet;
+    [self presentViewController:self.thirdFloorActivityViewController animated:YES completion:nil];
 }
 
 - (IBAction)fourthFloorViewController:(id)sender {
-    self.fourActivityViewController = [[FourActivityViewController alloc] initWithNibName:@"FourActivityViewController" bundle:[NSBundle mainBundle]];
-    self.modalPresentationStyle = UIModalPresentationFormSheet;
-    [self presentViewController:self.fourActivityViewController animated:YES completion:nil];
+    self.fourthFloorActivityViewController = [[TwoActivityViewController alloc] initWithNibName:@"TwoActivityViewController" bundle:[NSBundle mainBundle]];
+    self.modalInPopover = UIModalPresentationFormSheet;
+    [self presentViewController:self.fourthFloorActivityViewController animated:YES completion:nil];
 }
 
 

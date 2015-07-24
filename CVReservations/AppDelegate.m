@@ -39,6 +39,7 @@
 
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    NSLog(@"Got the push with: %@", userInfo);
     [PFPush handlePush:userInfo];
 }
 
@@ -46,7 +47,7 @@
     // Store the deviceToken in the current installation and save it to Parse.
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     [currentInstallation setDeviceTokenFromData:deviceToken];
-    //currentInstallation.channels = @[ @"global" ];
+    [currentInstallation addObject:@"global" forKey:@"channels"];
     [currentInstallation saveInBackground];
 }
 
