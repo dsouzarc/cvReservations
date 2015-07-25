@@ -33,28 +33,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     UIView *openActivity = (UIView*) [[NSBundle mainBundle] loadNibNamed:@"FourActivityView" owner:self options:nil][0];
     openActivity.frame = self.firstActivityView.frame;
-    
-    UIImageView *imageView = (UIImageView*) [openActivity viewWithTag:100];
-    [imageView setImage:[UIImage imageNamed:@"pinball"]];
-    
-    UIButton *button = (UIButton*) [openActivity viewWithTag:300];
-    button.titleLabel.numberOfLines = 2;
-    button.titleLabel.adjustsFontSizeToFitWidth = YES;
+    //Reservation *reservation = self.reservations[0];
     
     [self.view addSubview:openActivity];
     
     openActivity = (UIView*) [[NSBundle mainBundle] loadNibNamed:@"FourActivityView" owner:self options:nil][0];
     openActivity.frame = self.secondActivityView.frame;
+    //reservation = self.reservations[1];
     [self.view addSubview:openActivity];
     
     openActivity = (UIView*) [[NSBundle mainBundle] loadNibNamed:@"FourActivityView" owner:self options:nil][0];
     openActivity.frame = self.thirdActivityView.frame;
+    //reservation = self.reservations[2];
     [self.view addSubview:openActivity];
     
     openActivity = (UIView*) [[NSBundle mainBundle] loadNibNamed:@"FourActivityView" owner:self options:nil][0];
     openActivity.frame = self.fourthActivityView.frame;
+    //reservation = self.reservations[3];
     [self.view addSubview:openActivity];
 }
 

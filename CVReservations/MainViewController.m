@@ -29,52 +29,29 @@
     if(self) {
         self.settingsViewController = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:[NSBundle mainBundle]];
         self.currentReservations = [[NSMutableArray alloc] init];
-        
-        PFQuery *query = [PFQuery queryWithClassName:@"Reservations"];
-        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-            if(error) {
-                NSLog(@"Error getting reservations from Parse DB\t%@", error.description);
-            }
-            else {
-                NSLog(@"Got reservations from Parse db");
-                
-                for(PFObject *object in objects) {
-                    NSString *reservationID = [object objectId];
-                    NSString *description = object[@"description"];
-                    NSString *game = object[@"game"];
-                    NSInteger startTime = [object[@"startTime"] integerValue];
-                    NSString *status = object[@"status"];
-                    NSInteger players = [object[@"players"] integerValue];
-                    NSInteger needed = [object[@"needed"] integerValue];
-                    Reservation *reservation = [[Reservation alloc] initWithReservationID:reservationID gameIdentifier:game status:status reservationDescription:description startTime:startTime numberOfPlayers:players neededPlayers:needed];
-                    [self.currentReservations addObject:reservation];
-                    NSLog(@"Reservation: %@\t%@\t%@\t", reservationID, description, status);
-                }
-            }
-        }];
     }
     return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [ParseCloudManager getNextReservationForGame:@"pool"];
 }
 
 - (IBAction)secondFloorViewController:(id)sender {
-    self.secondFloorActivityViewController = [[FourActivityViewController alloc] initWithNibName:@"FourActivityViewController" bundle:[NSBundle mainBundle]];
+    self.secondFloorActivityViewController = [[FourActivityViewController alloc] initWithNibName:@"FourActivityViewController" bundle:[NSBundle mainBundle]reservations:self.currentReservations];
     self.modalPresentationStyle = UIModalPresentationFormSheet;
     [self presentViewController:self.secondFloorActivityViewController animated:YES completion:nil];
 }
 
 - (IBAction)thirdFloorViewController:(id)sender {
-    self.thirdFloorActivityViewController = [[TwoActivityViewController alloc] initWithNibName:@"TwoActivityViewController" bundle:[NSBundle mainBundle]];
+    self.thirdFloorActivityViewController = [[TwoActivityViewController alloc] initWithNibName:@"TwoActivityViewController" bundle:[NSBundle mainBundle] floorNumber:@"ThirdFloor" reservations:self.currentReservations];
     self.modalInPopover = UIModalPresentationFormSheet;
     [self presentViewController:self.thirdFloorActivityViewController animated:YES completion:nil];
 }
 
 - (IBAction)fourthFloorViewController:(id)sender {
-    self.fourthFloorActivityViewController = [[TwoActivityViewController alloc] initWithNibName:@"TwoActivityViewController" bundle:[NSBundle mainBundle]];
+    self.fourthFloorActivityViewController = [[TwoActivityViewController alloc] initWithNibName:@"TwoActivityViewController" bundle:[NSBundle mainBundle] floorNumber:@"FourthFloor" reservations:self.currentReservations];
     self.modalInPopover = UIModalPresentationFormSheet;
     [self presentViewController:self.fourthFloorActivityViewController animated:YES completion:nil];
 }

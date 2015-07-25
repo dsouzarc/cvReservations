@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
 
 @interface Reservation : NSObject
 
@@ -22,5 +23,9 @@
 
 - (instancetype) initWithReservationID:(NSString*)reservationID gameIdentifier:(NSString*)gameIdentifier status:(NSString*)status reservationDescription:(NSString*)reservationDescription
                              startTime:(NSInteger)startTime numberOfPlayers:(NSInteger)numberOfPlayers neededPlayers:(NSInteger)neededPlayers;
+- (instancetype) initWithParseObject:(PFObject*)object;
+
+- (NSDate*) getNSDate;
+- (NSString*) getHHMMdateFormat;
 
 @end

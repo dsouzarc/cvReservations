@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -15,23 +16,25 @@
                     <rect key="frame" x="8" y="8" width="230" height="214"/>
                     <color key="backgroundColor" red="0.085858585860000003" green="0.085858585860000003" blue="0.085858585860000003" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="230" id="p9f-AH-NDO"/>
+                        <constraint firstAttribute="width" constant="230" id="LhB-Ox-h7Y"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" tag="300" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dph-Hw-WkG">
-                    <rect key="frame" x="512" y="8" width="248" height="214"/>
-                    <color key="backgroundColor" red="1" green="0.44298223380000001" blue="0.29338494430000001" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="248" id="dmt-Cy-hnT"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                    <state key="normal" title="Reserve until XX:XX">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Until YY:YY" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfv-N6-ekQ">
                     <rect key="frame" x="246" y="8" width="258" height="214"/>
                     <color key="backgroundColor" red="0.085858585860000003" green="0.085858585860000003" blue="0.085858585860000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="258" id="0uf-sJ-yNZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="300" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Until YY:YY" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9f-3S-Kv6">
+                    <rect key="frame" x="502" y="8" width="258" height="214"/>
+                    <color key="backgroundColor" red="1" green="0.44298223380000001" blue="0.29338494430000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="258" id="6aL-L1-zrg"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="41"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
@@ -39,16 +42,15 @@
             </subviews>
             <color key="backgroundColor" red="0.085858585860000003" green="0.085858585860000003" blue="0.085858585860000003" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="dph-Hw-WkG" firstAttribute="bottom" secondItem="Tfv-N6-ekQ" secondAttribute="bottom" id="17R-Kf-0yh"/>
-                <constraint firstItem="h22-uE-WsY" firstAttribute="top" secondItem="Tfv-N6-ekQ" secondAttribute="top" id="2P9-Wc-Vz0"/>
-                <constraint firstItem="h22-uE-WsY" firstAttribute="bottom" secondItem="Tfv-N6-ekQ" secondAttribute="bottom" id="31Y-FN-SYl"/>
-                <constraint firstItem="h22-uE-WsY" firstAttribute="bottom" secondItem="s9Q-Gg-Rht" secondAttribute="bottomMargin" id="3Mw-yP-Ddg"/>
-                <constraint firstItem="Tfv-N6-ekQ" firstAttribute="leading" secondItem="h22-uE-WsY" secondAttribute="trailing" constant="8" symbolic="YES" id="8wd-FH-mZc"/>
-                <constraint firstItem="Tfv-N6-ekQ" firstAttribute="top" secondItem="dph-Hw-WkG" secondAttribute="top" id="Lik-nX-LLA"/>
-                <constraint firstItem="h22-uE-WsY" firstAttribute="top" secondItem="s9Q-Gg-Rht" secondAttribute="topMargin" id="dsO-i0-vle"/>
-                <constraint firstItem="h22-uE-WsY" firstAttribute="leading" secondItem="s9Q-Gg-Rht" secondAttribute="leadingMargin" id="fDn-69-t4e"/>
-                <constraint firstItem="dph-Hw-WkG" firstAttribute="trailing" secondItem="s9Q-Gg-Rht" secondAttribute="trailingMargin" id="kri-hH-Sby"/>
-                <constraint firstItem="dph-Hw-WkG" firstAttribute="leading" secondItem="Tfv-N6-ekQ" secondAttribute="trailing" constant="8" symbolic="YES" id="wWy-Fs-BeR"/>
+                <constraint firstItem="R9f-3S-Kv6" firstAttribute="trailing" secondItem="s9Q-Gg-Rht" secondAttribute="trailingMargin" id="3vF-8e-q2g"/>
+                <constraint firstItem="Tfv-N6-ekQ" firstAttribute="leading" secondItem="h22-uE-WsY" secondAttribute="trailing" constant="8" symbolic="YES" id="BSw-vs-Can"/>
+                <constraint firstItem="Tfv-N6-ekQ" firstAttribute="bottom" secondItem="h22-uE-WsY" secondAttribute="bottom" id="EqV-rA-Zgf"/>
+                <constraint firstItem="Tfv-N6-ekQ" firstAttribute="bottom" secondItem="s9Q-Gg-Rht" secondAttribute="bottomMargin" id="H4g-vy-2b4"/>
+                <constraint firstItem="Tfv-N6-ekQ" firstAttribute="top" secondItem="h22-uE-WsY" secondAttribute="top" id="Uuc-TP-GBt"/>
+                <constraint firstItem="Tfv-N6-ekQ" firstAttribute="top" secondItem="s9Q-Gg-Rht" secondAttribute="topMargin" id="leU-tX-Iwc"/>
+                <constraint firstItem="h22-uE-WsY" firstAttribute="leading" secondItem="s9Q-Gg-Rht" secondAttribute="leadingMargin" id="p6V-vp-0SD"/>
+                <constraint firstItem="R9f-3S-Kv6" firstAttribute="baseline" secondItem="Tfv-N6-ekQ" secondAttribute="baseline" id="sgd-6t-rih"/>
+                <constraint firstItem="Tfv-N6-ekQ" firstAttribute="firstBaseline" secondItem="R9f-3S-Kv6" secondAttribute="firstBaseline" id="yXo-ll-LLd"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>

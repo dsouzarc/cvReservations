@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "Reservation.h"
+#import "ParseCloudManager.h"
 
 @interface TwoActivityViewController : ViewController
 
-- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil reservations:(NSMutableArray*)reservations;
+- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil floorNumber:(NSString*)floorNumber reservations:(NSMutableArray*)reservations;
 
 @end

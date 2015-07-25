@@ -14,6 +14,7 @@
 #import "FourActivityViewController.h"
 
 #import "Reservation.h"
+#import "ParseCloudManager.h"
 
 @interface MainViewController : ViewController
 
